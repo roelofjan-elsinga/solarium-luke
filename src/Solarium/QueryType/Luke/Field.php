@@ -32,6 +32,11 @@ class Field
     protected $_dynamicBase;
 
     /**
+     * @var []
+     */
+    protected $_topTerms;
+
+    /**
      * Constructor
      *
      * @param string $field_name
@@ -47,6 +52,7 @@ class Field
         } else {
             $this->_dynamicBase = false;
         }
+        $this->_topTerms = $field_info['topTerms'];
     }
 
     /**
@@ -87,5 +93,13 @@ class Field
     public function isDynamic()
     {
         return (bool) $this->_dynamicBase;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTopTerms()
+    {
+        return $this->_topTerms;
     }
 }

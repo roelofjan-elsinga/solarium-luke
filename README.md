@@ -13,4 +13,6 @@ Usage
     $luke = $client->createQuery(LukeQuery::QUERY_LUKE);
     $data = $client->execute($luke);
 
-    print 'Num docs: ' . $data->getNumDocs(); . PHP_EOL;
+    print 'Top terms: ';
+	var_dump($data->getTopTerms());
+	print PHP_EOL;

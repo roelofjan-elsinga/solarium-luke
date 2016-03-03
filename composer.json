@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "solarium/solarium": "3.0.*"
+        "solarium/solarium": "3.*"
     },
     "autoload": {
         "psr-0": {
