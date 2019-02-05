@@ -6,7 +6,7 @@
 
 namespace Solarium\QueryType\Luke;
 
-use Solarium\Core\Query\Query as BaseQuery;
+use Solarium\Core\Query\AbstractQuery as BaseQuery;
 
 /**
  * Luke query
@@ -33,7 +33,7 @@ class Query extends BaseQuery
     /**
      * {@inheritdoc}
      */
-    public function getType()
+    public function getType(): string
     {
         return self::QUERY_LUKE;
     }

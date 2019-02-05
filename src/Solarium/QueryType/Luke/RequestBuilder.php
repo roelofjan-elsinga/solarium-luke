@@ -6,7 +6,7 @@
 
 namespace Solarium\QueryType\Luke;
 
-use Solarium\Core\Query\RequestBuilder as BaseRequestBuilder;
+use Solarium\Core\Query\AbstractRequestBuilder as BaseRequestBuilder;
 use Solarium\Core\Query\QueryInterface;
 
 /**

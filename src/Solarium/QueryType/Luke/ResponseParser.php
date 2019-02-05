@@ -5,7 +5,7 @@
  */
 
 namespace Solarium\QueryType\Luke;
-use Solarium\Core\Query\ResponseParser as ResponseParserAbstract;
+use Solarium\Core\Query\AbstractResponseParser as ResponseParserAbstract;
 use Solarium\Core\Query\ResponseParserInterface as ResponseParserInterface;
 
 /**
