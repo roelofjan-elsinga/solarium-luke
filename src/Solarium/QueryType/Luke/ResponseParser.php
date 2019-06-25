@@ -1,22 +1,20 @@
 <?php
 
-/**
- *
- */
-
 namespace Solarium\QueryType\Luke;
-use Solarium\Core\Query\AbstractResponseParser as ResponseParserAbstract;
-use Solarium\Core\Query\ResponseParserInterface as ResponseParserInterface;
+
+use Solarium\Core\Query\AbstractResponseParser;
+use Solarium\Core\Query\ResponseParserInterface;
+use Solarium\Core\Query\Result\ResultInterface;
 
 /**
  * Parse Luke response data
  */
-class ResponseParser extends ResponseParserAbstract implements ResponseParserInterface
+class ResponseParser extends AbstractResponseParser implements ResponseParserInterface
 {
     /**
      * Implements \Solarium\Core\Query\ResponseParserInterface::parse().
      */
-    public function parse($result)
+    public function parse(ResultInterface $result): array
     {
         $data = $result->getData();
 
