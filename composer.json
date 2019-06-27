@@ -20,7 +20,7 @@
         "solarium/solarium": "5.*"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Solarium\\QueryType\\Luke": "src"
         }
     }
