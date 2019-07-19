@@ -6,10 +6,10 @@
 
 namespace Solarium\QueryType\Luke;
 
-/**
- *
- */
-class FieldSet implements \IteratorAggregate
+use ArrayIterator;
+use IteratorAggregate;
+
+class FieldSet implements IteratorAggregate
 {
     /**
      * @var array
@@ -17,22 +17,23 @@ class FieldSet implements \IteratorAggregate
     protected $_fields;
 
     /**
-     *
+     * @param array $fields
      */
     public function __construct(array $fields)
     {
-        return $this->_fields = $fields;
+        $this->_fields = $fields;
     }
 
     /**
      * @return array
      */
-    public function getFields()
+    public function getFields(): array
     {
         return $this->_fields;
     }
 
     /**
+     * @param string $field_name
      * @return Field|false
      */
     public function getField($field_name)
@@ -41,17 +42,17 @@ class FieldSet implements \IteratorAggregate
     }
 
     /**
-     *
+     * @return ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): ArrayIterator
     {
-        return new \ArrayIterator($this->_fields);
+        return new ArrayIterator($this->_fields);
     }
-
     /**
+     * @param string $name
      * @return Field
      */
-    public function __get($name)
+    public function __get(string $name)
     {
         if (!$field = $this->getField($name)) {
             throw new \RuntimeException('Field "' . $name . '" does not exist.');

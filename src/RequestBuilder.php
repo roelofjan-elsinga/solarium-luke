@@ -26,7 +26,6 @@ class RequestBuilder extends AbstractRequestBuilder implements RequestBuilderInt
             ->addParam('numTerms', 0)
             ->addParam('json.nl', 'map');
 
-        //$request->setMethod(Request::METHOD_GET);
         return $request;
     }
 

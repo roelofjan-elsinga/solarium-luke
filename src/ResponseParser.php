@@ -13,6 +13,9 @@ class ResponseParser extends AbstractResponseParser implements ResponseParserInt
 {
     /**
      * Implements \Solarium\Core\Query\ResponseParserInterface::parse().
+     *
+     * @param ResultInterface $result
+     * @return array
      */
     public function parse(ResultInterface $result): array
     {

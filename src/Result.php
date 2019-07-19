@@ -14,26 +14,26 @@ use Solarium\Core\Query\Result\QueryType as BaseResult;
 class Result extends BaseResult implements \Countable
 {
     /**
-     *
+     * @param $property
+     * @return mixed
      */
     public function returnProperty($property)
     {
         $this->parseResponse();
+
         return $this->$property;
     }
 
     /**
-     *
+     * @return int|mixed
      */
     public function count()
     {
         return $this->getNumDocs();
     }
 
-    // From $data['index']
-
     /**
-     *
+     * @return mixed
      */
     public function getCurrent()
     {
@@ -41,7 +41,7 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getDirectory()
     {
@@ -49,7 +49,7 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getHasDeletions()
     {
@@ -57,7 +57,7 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getLastModified()
     {
@@ -65,7 +65,7 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getMaxDoc()
     {
@@ -73,7 +73,7 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getNumDocs()
     {
@@ -81,7 +81,7 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getSegmentCount()
     {
@@ -89,17 +89,15 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getVersion()
     {
         return $this->returnProperty('version');
     }
 
-    // From $data['into']
-
     /**
-     *
+     * @return mixed
      */
     public function getNote()
     {
@@ -107,17 +105,15 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getKey()
     {
         return $this->returnProperty('key');
     }
 
-    // From $data['responseHeader']
-
     /**
-     *
+     * @return mixed
      */
     public function getQueryTime()
     {
@@ -125,18 +121,15 @@ class Result extends BaseResult implements \Countable
     }
 
     /**
-     *
+     * @return mixed
      */
     public function getStatus()
     {
         return $this->returnProperty('status');
     }
 
-    // From $data['fields']
-
     /**
-     *
-     * @return FieldSet
+     * @return mixed
      */
     public function getFields()
     {

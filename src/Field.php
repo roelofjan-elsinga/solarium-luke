@@ -6,9 +6,6 @@
 
 namespace Solarium\QueryType\Luke;
 
-/**
- *
- */
 class Field
 {
     /**
@@ -32,7 +29,7 @@ class Field
     protected $_dynamicBase;
 
     /**
-     * @var []
+     * @var array
      */
     protected $_topTerms;
 
@@ -40,7 +37,7 @@ class Field
      * Constructor
      *
      * @param string $field_name
-     * @param array $fields_info
+     * @param array $field_info
      */
     public function __construct($field_name, array $field_info)
     {
@@ -58,7 +55,7 @@ class Field
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->_name;
     }
@@ -66,7 +63,7 @@ class Field
     /**
      * @return string
      */
-    public function getSchema()
+    public function getSchema(): string
     {
         return $this->_schema;
     }
@@ -74,7 +71,7 @@ class Field
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
         return $this->_type;
     }
@@ -90,13 +87,13 @@ class Field
     /**
      * @return bool
      */
-    public function isDynamic()
+    public function isDynamic(): bool
     {
         return (bool) $this->_dynamicBase;
     }
 
     /**
-     * @return mixed
+     * @return array
      */
     public function getTopTerms()
     {

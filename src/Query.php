@@ -10,6 +10,7 @@ use Solarium\Core\Query\AbstractQuery as BaseQuery;
 use Solarium\Core\Query\QueryInterface;
 use Solarium\Core\Query\ResponseParserInterface;
 use Solarium\Core\Query\RequestBuilderInterface;
+use Solarium\Core\Query\Result\QueryType;
 
 /**
  * Luke query
@@ -19,7 +20,7 @@ use Solarium\Core\Query\RequestBuilderInterface;
 class Query extends BaseQuery implements QueryInterface
 {
     /**
-     * Querytype luke
+     * @var Querytype luke
      */
     const QUERY_LUKE = 'luke';
 
@@ -28,10 +29,10 @@ class Query extends BaseQuery implements QueryInterface
      *
      * @var array
      */
-    protected $options = array(
+    protected $options = [
         'resultclass' => Result::class,
         'handler' => 'admin/luke',
-    );
+    ];
 
     /**
      * {@inheritdoc}
