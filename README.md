@@ -8,10 +8,11 @@ A Luke request handler to [Solarium](https://github.com/basdenooijer/solarium).
 
 ```php
 use Solarium\Client;
-use Solarium\QueryType\Luke\Query as LukeQuery;
+use Solarium\QueryType\Luke\Query;
 
-$client->registerQueryType(LukeQuery::QUERY_LUKE, 'Solarium\\QueryType\\Luke\\Query');
-$luke = $client->createQuery(LukeQuery::QUERY_LUKE);
+$client = new Client();
+$client->registerQueryType(Query::QUERY_LUKE, Query::class);
+$luke = $client->createQuery(Query::QUERY_LUKE);
 $data = $client->execute($luke);
 
 print 'Top terms: ';
