@@ -4,7 +4,7 @@
     "description": "A Luke request handler for Solarium.",
     "keywords": ["solr", "solarium", "luke"],
     "homepage": "https://github.com/cpliakas/solarium-luke",
-    "license": "NewBSD",
+    "license": "MIT",
     "authors": [
         {
             "name": "See Contributors to Drupal's Apache Solr Search Integration module.",

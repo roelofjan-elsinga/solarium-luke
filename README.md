@@ -16,7 +16,9 @@ composer remove cpliakas/solarium-luke \
 
 ## Overview
 
-A Luke request handler to [Solarium](https://github.com/basdenooijer/solarium).
+A Luke request handler to [Solarium](https://github.com/solariumphp/solarium).
+
+This package currently supports Solarium 5.x.
 
 ## Usage
 
