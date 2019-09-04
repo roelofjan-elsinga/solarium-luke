@@ -1,5 +1,5 @@
 {
-    "name": "cpliakas/solarium-luke",
+    "name": "roelofjan-elsinga/solarium-luke",
     "type": "library",
     "description": "A Luke request handler for Solarium.",
     "keywords": ["solr", "solarium", "luke"],
@@ -13,6 +13,10 @@
         {
             "name": "Chris Pliakas",
             "email": "opensource@chrispliakas.com"
+        },
+        {
+            "name": "Roelof Jan Elsinga",
+            "email": "roelofjanelsinga@gmail.com"
         }
     ],
     "require": {

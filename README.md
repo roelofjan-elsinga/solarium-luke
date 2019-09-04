@@ -1,5 +1,15 @@
 # Luke request handler for Solarium
 
+## Notes about this forked version
+This is a fork of the package: cpliakas/solarium-luke, but since it seems inactive, I'm maintaining a version here. 
+The namespaces are still the same, so the only thing you have to do to migrate to this package, 
+is replacing the installation like so:
+
+```bash
+composer remove cpliakas/solarium-luke \
+    && composer require roelofjan-elsinga/solarium-luke
+```
+
 ## Overview
 
 A Luke request handler to [Solarium](https://github.com/basdenooijer/solarium).
@@ -19,4 +29,3 @@ print 'Top terms: ';
 var_dump($data->getTopTerms());
 print PHP_EOL;
 ```
-
