@@ -1,5 +1,9 @@
 # Luke request handler for Solarium
 
+[![Latest Stable Version](https://poser.pugx.org/roelofjan-elsinga/solarium-luke/v/stable)](https://packagist.org/packages/roelofjan-elsinga/solarium-luke)
+[![Total Downloads](https://poser.pugx.org/roelofjan-elsinga/solarium-luke/downloads)](https://packagist.org/packages/roelofjan-elsinga/solarium-luke)
+[![License](https://poser.pugx.org/roelofjan-elsinga/solarium-luke/license)](https://packagist.org/packages/roelofjan-elsinga/solarium-luke)
+
 ## Notes about this forked version
 This is a fork of the package: cpliakas/solarium-luke, but since it seems inactive, I'm maintaining a version here. 
 The namespaces are still the same, so the only thing you have to do to migrate to this package, 
