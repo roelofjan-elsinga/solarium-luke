@@ -1,9 +1,5 @@
 <?php
 
-/**
- *
- */
-
 namespace Solarium\QueryType\Luke;
 
 use Solarium\Core\Query\Result\QueryType as BaseResult;
