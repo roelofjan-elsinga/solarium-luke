@@ -28,5 +28,4 @@ class RequestBuilder extends AbstractRequestBuilder implements RequestBuilderInt
 
         return $request;
     }
-
 }
