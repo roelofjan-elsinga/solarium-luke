@@ -2,6 +2,7 @@
 
 [![Build status](https://travis-ci.com/roelofjan-elsinga/solarium-luke.svg)](https://travis-ci.com/roelofjan-elsinga/solarium-luke)
 ![StyleCI status](https://github.styleci.io/repos/193693688/shield)
+[![Code coverage](https://codecov.io/gh/roelofjan-elsinga/solarium-luke/branch/master/graph/badge.svg)](https://codecov.io/gh/roelofjan-elsinga/solarium-luke)
 [![Latest Stable Version](https://poser.pugx.org/roelofjan-elsinga/solarium-luke/v/stable)](https://packagist.org/packages/roelofjan-elsinga/solarium-luke)
 [![Total Downloads](https://poser.pugx.org/roelofjan-elsinga/solarium-luke/downloads)](https://packagist.org/packages/roelofjan-elsinga/solarium-luke)
 [![License](https://poser.pugx.org/roelofjan-elsinga/solarium-luke/license)](https://packagist.org/packages/roelofjan-elsinga/solarium-luke)
