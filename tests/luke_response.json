@@ -11,7 +11,7 @@
     "segmentCount":40,
     "current":false,
     "hasDeletions":true,
-    "directory":"org.apache.lucene.store.NRTCachingDirectory:NRTCachingDirectory(MMapDirectory@/opt/solr/server/solr/mycores/cores/boat_search/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@53bbf2d3; maxCacheMB=48.0 maxMergeSizeMB=4.0)",
+    "directory":"org.apache.lucene.store.NRTCachingDirectory:NRTCachingDirectory(MMapDirectory@/opt/solr/server/solr/mycores/cores/core_name/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@53bbf2d3; maxCacheMB=48.0 maxMergeSizeMB=4.0)",
     "segmentsFile":"segments_qvm",
     "segmentsFileSizeInBytes":2776,
     "userData":{
@@ -38,7 +38,31 @@
         "3",750,
         "4",2500,
         "5",5000
-      ]}},
+      ]
+    },
+    "dynamic_id":{
+      "type":"string",
+      "schema":"I--DU-----OF-----l",
+      "index":"(unstored field)",
+      "docs":200000,
+      "distinct":10000,
+      "dynamicBase":true,
+      "topTerms":[
+        "1",5000,
+        "2",2500,
+        "3",1000,
+        "4",750,
+        "5",750
+      ],
+      "histogram":[
+        "1",750,
+        "2",750,
+        "3",750,
+        "4",2500,
+        "5",5000
+      ]
+    }
+  },
   "info":{
     "key":{
       "I":"Indexed",
