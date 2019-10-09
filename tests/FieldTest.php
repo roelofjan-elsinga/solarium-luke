@@ -101,5 +101,4 @@ class FieldTest extends \PHPUnit\Framework\TestCase
 
         $this->field_set->testing_id;
     }
-
 }

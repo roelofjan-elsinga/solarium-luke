@@ -95,5 +95,4 @@ class ResultTest extends \PHPUnit\Framework\TestCase
             get_class($this->result->getFields())
         );
     }
-
 }
