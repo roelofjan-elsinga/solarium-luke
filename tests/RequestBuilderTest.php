@@ -1,11 +1,14 @@
 <?php
 
 
+use Solarium\Client;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+
 class RequestBuilderTest extends \PHPUnit\Framework\TestCase
 {
     public function test_custom_request_builder_adds_stuff()
     {
-        $client = new \Solarium\Client();
+        $client = new Client(new MyAdapter(), new EventDispatcher());
 
         $request = $client->createRequest(new \Solarium\QueryType\Luke\Query());
 

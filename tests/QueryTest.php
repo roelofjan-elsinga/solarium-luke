@@ -2,9 +2,14 @@
 
 
 use Solarium\Client;
+use Solarium\Core\Client\Adapter\Http;
+use Solarium\Core\Client\Endpoint;
+use Solarium\Core\Client\Request;
+use Solarium\Core\Client\Response;
 use Solarium\QueryType\Luke\Query;
 use Solarium\QueryType\Luke\Result;
 use Solarium\QueryType\Luke\FieldSet;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 class QueryTest extends \PHPUnit\Framework\TestCase
 {
@@ -16,7 +21,7 @@ class QueryTest extends \PHPUnit\Framework\TestCase
     {
         parent::setUp();
 
-        $this->client = new Client();
+        $this->client = new Client(new MyAdapter(), new EventDispatcher());
     }
 
     public function testLukeQueryCanBeRegistered()
@@ -56,5 +61,14 @@ class QueryTest extends \PHPUnit\Framework\TestCase
         $this->assertSame('1', $top_terms[0]);
 
         $this->assertSame(5000, $top_terms[1]);
+    }
+
+}
+
+class MyAdapter extends Http
+{
+    public function execute(Request $request, Endpoint $endpoint): Response
+    {
+        return new Response('{}', ['HTTP/1.1 200 OK']);
     }
 }
