@@ -62,7 +62,6 @@ class QueryTest extends \PHPUnit\Framework\TestCase
 
         $this->assertSame(5000, $top_terms[1]);
     }
-
 }
 
 class MyAdapter extends Http
